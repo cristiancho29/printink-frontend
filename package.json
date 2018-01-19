@@ -22,22 +22,33 @@
   },
   "homepage": "https://github.com/cristiancho29/printink-frontend#readme",
   "dependencies": {
-    "express": "^4.15.3"
+    "antd": "^3.1.1",
+    "axios": "^0.17.1",
+    "elemental": "^0.6.1",
+    "express": "^4.15.3",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2"
   },
   "devDependencies": {
     "babel-core": "^5.3.3",
     "babel-loader": "^5.0.0",
+    "babel-plugin-import": "^1.6.3",
     "clean-webpack-plugin": "^0.1.16",
-    "css-loader": "^0.12.0",
-    "extract-text-webpack-plugin": "^1.0.1",
+    "css-loader": "^0.12.1",
+    "extract-text-webpack-plugin": "^2.0.0",
     "jsx-loader": "^0.13.2",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "less-vars-to-js": "^1.2.1",
     "node-sass": "^2.1.1",
     "nodemon": "^1.11.0",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-hot-loader": "^1.3.1",
     "sass-loader": "^0.5.0",
-    "style-loader": "^0.12.2",
-    "webpack": "^1.9.5"
+    "style-loader": "^0.12.4",
+    "webpack": "^2.7.0"
   }
 }

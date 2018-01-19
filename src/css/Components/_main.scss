@@ -1,0 +1,173 @@
+main{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    //Componente que renderiza las rutas
+    .routes{
+        margin:20px 0 20px 0;
+        display:flex;
+        justify-content:center;
+        .homeContent{
+            width:90%;
+            background-color:white;
+            margin:0 5% 0 5%;
+            text-align:center;
+            border:1px solid gray;
+            .Carousel{
+                padding:0px;
+                margin:10px auto;
+                display:flex;
+                width:80%;
+                height:400px;
+                text-align:center;
+                background-color:gainsboro;
+                //Div que contiene las flechas de navegación del Carrusel
+                div{
+                    margin:auto;
+                    .arrowCarousel{
+                        margin:auto;
+                    }
+                }
+                .imgCarouselDiv{
+                    display:flex;
+                    justify-content:center;
+                    width:30%;
+                    margin:auto;
+                    .imgCarousel{
+                        height:100px;
+                        width:100px;
+                    }
+                }
+                .textCarouselDiv{
+                    //height:80%;
+                    width:50%;
+                    margin:auto;
+                    text-align:center;
+                    display:flex;
+                    .textCarousel{
+                        margin:auto;
+                    }
+                }
+            }
+            //Barra que separa el Carrusel de las lista de LastProducts
+            .lastProductBar{
+                background-color:blue;
+                text-align:center;
+                padding:10px 0 10px 0;
+                width:100%;
+                margin:10px 0 10px 0;
+                .lastProductTitle{
+                    color:white;
+                }
+            }
+            .lastProducts{
+                //height:40%;
+                width:90%;
+                margin:10px 5% 10px 5%;
+                display:flex;
+                border:1px solid black;
+                text-align:center;
+                .typeProduct{
+                    width:20%;
+                    text-align:center;
+                    display:flex;
+                    height:100%;
+                    border:1px solid gray;
+                    .typeProductTitle{
+                        margin:auto;
+                    }
+                }
+                .productContainer{
+                    width:100%;
+                    display:flex;
+                    flex-direction:row;
+                    flex-wrap:wrap;
+                    justify-content:center;
+                    align-content:center;
+                    .productItem{
+                        width:25%;
+                        height:90%;
+                        border:1px solid gray;
+                        .productImg{
+                            height:30%;
+                            width:50%;
+                        }
+                        p,button{
+                            margin:0px;
+                        }
+                    }
+                }
+            }
+        }
+        //Login
+        .loginContent{
+            background-color:white;
+            margin:150px 0 150px 0;
+            text-align:center;
+            display:block;
+            border: 1px solid gray;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            .form{
+                input{
+                    width: 100%;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    //Para ponerlos en línea(display: inline-block)
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                }
+                button{
+                    width: 30%;
+                    background-color: blue;
+                    color: white;
+                    padding: 14px 20px;
+                    margin: 8px 0;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+            }
+        }
+        //ProductList
+        .productList{
+            width:90%;
+            display:flex;
+            margin:100px 5% 100px 5%;
+            .productListBar{
+                width:30%;
+                //height:900px;
+                .productListBarTitle{
+                    width:90%;
+                    margin:auto;
+                    a{
+                        margin:0 0 10px 10px;
+                    }
+                }
+            }
+            .productListResult{
+                margin:0 10px 0 10px;
+                width:70%;
+                display:flex;
+                flex-direction:row;
+                flex-wrap:wrap;
+                align-content:space-around;
+                .Paper{
+                    margin:10px;
+                    height:200px;
+                    width:170px;
+                }
+                .productResult{
+                    
+                    .productBox{
+                        margin:50px;
+                    }
+                }
+            }
+        }
+    }
+}

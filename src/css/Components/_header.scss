@@ -1,0 +1,28 @@
+header{
+    width:100%;
+    height:50px;
+    padding:0;
+    display:flex;
+    background-color:blue;
+    .linkHeader{
+        color:white;
+        width:20%;
+        display:flex;
+        margin:auto;
+        left:10px;
+        text-decoration: none;
+        .homeTitle{
+            margin:auto;
+        }
+    }
+    .linkHeader:hover{
+        color:gray;
+        text-decoration: underline;
+        
+    }
+    div{
+        margin:auto;
+        right:0px;
+        width:80%;
+    }
+}
