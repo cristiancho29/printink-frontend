@@ -9,6 +9,7 @@ import Home from './Pages/Home.jsx';
 import Login from './Pages/Public/Login.jsx';
 import ProductInfo from './Pages/Public/ProductInfo.jsx';
 import ProductList from './Pages/Public/ProductList.jsx';
+import Dashboard from './Pages/Protected/Dashboard.jsx'
 
 
 
@@ -48,7 +49,8 @@ class Main extends React.Component {
 						<Route exact path="/" component={()=>(<Home/>)}/>
 						<Route path="/login" component={()=>(<Login login={this.login}/>)}/>
 						<Route path="/productInfo/:_id?" component={()=>(<ProductInfo id={"5a43d9b8bfc"}/>)}/>
-						<Route path="/products"component={()=>(<ProductList />)}/>
+						<Route path="/products" component={()=>(<ProductList />)}/>
+						<Route path="/dashboard" component={()=>(<Dashboard />)}/>
 					</div>
 					<Footer />
 				</main>

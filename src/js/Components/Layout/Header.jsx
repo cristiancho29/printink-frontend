@@ -13,7 +13,7 @@ class Header extends React.Component{
         return(
             <header>
                 <Link to="/" className="linkHeader"><p className="homeTitle">Print Ink Suministros e Insumos</p></Link>
-                <Nav loggedIn={this.props.loggedIn}/>
+                <Nav loggedIn={this.props.loggedIn} logout={this.props.logout}/>
             </header>
         );
     }

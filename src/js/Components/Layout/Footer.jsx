@@ -8,10 +8,10 @@ class Footer extends React.Component {
 			<footer>
 				<div className="footerInfo">
 					<div>
-						<p>Dirección:</p>
+						<p>Dirección: Calle 42 No.41-92 Piso 2</p>
 					</div>
 					<div>
-						<p>Teléfonos:</p>
+						<p> Celular: 3002324196 Tel. 57-5-3405166</p>
 					</div>
 				</div>
 				<div className="copyright">

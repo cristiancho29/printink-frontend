@@ -1,6 +1,6 @@
 //Librerias
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {Link, Redirect} from 'react-router-dom';
 //Componentes
 import AppBar from 'material-ui/AppBar';
 //Componentes
@@ -8,7 +8,17 @@ import AppBar from 'material-ui/AppBar';
 class Nav extends React.Component {
 	constructor(props){
 		super(props);
+		this.state={
+			isRedirected:false
+		};
 		
+	}
+	
+	logout(){
+		this.props.logout();
+		this.setState({
+			isRedirected:true
+		});
 	}
 	render() {
 		return (
@@ -20,7 +30,18 @@ class Nav extends React.Component {
 							<li><Link className="link" to="/dashboard">Administrar Productos</Link></li>
 							<li><Link className="link" to="/" onClick={this.props.logout}>Cerrar Sesión</Link></li>
 				    	</ul>
+				    	{(this.state.isRedirected ? 
+							(
+								<Redirect to="/" />
+							)
+							:
+							(
+								<div/>
+							)
+						)}
 					</nav>
+					
+					
 					
 				)
 				:
