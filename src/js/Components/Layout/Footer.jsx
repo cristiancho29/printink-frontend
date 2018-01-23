@@ -10,8 +10,9 @@ class Footer extends React.Component {
 					<div>
 						<p>Dirección: Calle 42 No.41-92 Piso 2</p>
 					</div>
-					<div>
-						<p> Celular: 3002324196 Tel. 57-5-3405166</p>
+					<div style={{display:"flex"}}>
+						<p>Celular: 3002324196</p>
+						<p>Tel. 57-5-3405166</p>
 					</div>
 				</div>
 				<div className="copyright">

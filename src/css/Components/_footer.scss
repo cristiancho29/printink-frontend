@@ -1,3 +1,4 @@
+//Arreglar footer
 footer{
     background-color:blue;
     color:white;
@@ -10,6 +11,9 @@ footer{
             padding:0 20px 0 20px;
             width:50%;
             margin:auto;
+            p{
+                margin:20px;
+            }
         }
     }
     .copyright{

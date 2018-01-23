@@ -27,8 +27,8 @@ class Nav extends React.Component {
 				(
 					<nav>
 						<ul>
-							<li><Link className="link" to="/dashboard">Administrar Productos</Link></li>
 							<li><Link className="link" to="/" onClick={this.props.logout}>Cerrar Sesión</Link></li>
+							<li><Link className="link" to="/protected/products">Administrar Productos</Link></li>
 				    	</ul>
 				    	{(this.state.isRedirected ? 
 							(
