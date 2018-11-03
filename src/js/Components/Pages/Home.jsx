@@ -101,11 +101,16 @@ class Home extends React.Component{
                     </div>
                 </Paper>
                 <div className="lastProductBar">
-                    <p className="lastProductTitle">Ultimos productos</p>
+                    <h1 className="lastProductTitle">Ultimos productos</h1>
                 </div>
                 <Paper className="lastProducts">
                     <Paper className="typeProduct">
-                        <p className="typeProductTitle">Tipos de productos</p>
+                        <h2 className="typeProductTitle">Tipos de productos</h2>
+                        <ul>
+                            <li>Tipo 1</li>
+                            <li>Tipo 2 </li>
+                            <li>Tipo 3</li>
+                        </ul>
                     </Paper>
                     <Paper className="productContainer">
                         {this.state.products.map((product)=>
